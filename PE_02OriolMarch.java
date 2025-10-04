@@ -42,6 +42,37 @@ Scanner sc = new Scanner(System.in);
                 System.out.println("2) Soterrani");
                 System.out.print("Opció: ");
                 int d2_principal = sc.nextInt();
+
+                switch (d2_principal) {
+                    case 1: {
+                        // Planta superior
+                        System.out.println("\nPlanta superior: Veus una persona vella i amb una forma molt estranya.");
+                    
+                        // Decisió 3
+                        
+                        System.out.println("Decisió 3: L’ajudes o no l’ajudes?");
+                        System.out.println("1) Ajudar");
+                        System.out.println("2) No ajudar");
+                        System.out.print("Opció: ");
+                        int d3_superior = sc.nextInt();
+
+                        if (d3_superior == 1) {
+                            if (teBiblia) {
+                                System.out.println("\nAmb Bíblia: És un esperit i no et posseeix. (Final Feliç)");
+                            } else {
+                                System.out.println("\nSense Bíblia: Et posseeix i mates a tota la família. (Final Tràgic)");
+                            }
+                        } else {
+                            System.out.println("\nSense ajudar: Per la seva presència et suïcides amb la mateixa creu del penjoll. (Final Tràgic)");
+                        }
+                        break;
+                    }
+                    case 2: {
+                        // Soterrani
+                        System.out.println("\nSoterrani: Està tot fosc i hi ha un home amb una destral.");
     }
+
 }
+}
+    }
 }
