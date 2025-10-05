@@ -109,7 +109,28 @@ public class PE_02OriolMarch {
                 System.out.println("2) Tornar a la porta principal");
                 System.out.print("Opció: ");
                 int d2_darrere = sc.nextInt();
+
+                if (d2_darrere == 1) {
+                    if (teBiblia) {
+                        System.out.println("\nEntrar amb la Bíblia: Realitat paral·lela perfecta: família, diners, motos, gossos, mansió … (Final Fantàstic Bo)");
+                    } else {
+                        System.out.println("\nEntrar sense Bíblia: Realitat paral·lela d'infern i sofriment etern. (Final Fantàstic Tràgic)");
+                    }
+                } else if (d2_darrere == 2) {
+                    System.out.println("\nPorta principal: No la pots obrir, s'ha travat; la família mor, però tornes a casa viu. (Final Fantàstic Neutre)");
+                } else {
+                    System.out.println("\nOpció no vàlida a la Decisió 2.");
+                }
+                break;
+            }
+            default: {
+                System.out.println("Opció no vàlida a la Decisió 1.");
+                break;
+            }
+        }
+
+        System.out.println("Fi de la història by Oriol March Vernet.");
+        sc.close();
         }
     }
-    }
-}
+    
